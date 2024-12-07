@@ -1,0 +1,7 @@
+subdir('Model')
+subdir('Controller')
+subdir('AIPlayers')
+subdir('GameUtils')
+subdir('Tournament')
+subdir('Utils')
+subdir('View')

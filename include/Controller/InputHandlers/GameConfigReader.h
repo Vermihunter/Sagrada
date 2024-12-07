@@ -84,8 +84,7 @@ inline wpc_c get_selectable_wpc(json& j, board_config_t boardConfig)
             });
 
         if (wpcIt == allWpc.end()) {
-            throw std::invalid_argument {"Undefined WPC title: " +
-                                         wpcTitle.dump()};
+            throw std::invalid_argument {"Undefined WPC title: " + wpcTitle.dump()};
         }
 
         res.push_back(*wpcIt);
@@ -95,45 +94,36 @@ inline wpc_c get_selectable_wpc(json& j, board_config_t boardConfig)
 
 inline score_ctx_t get_score_ctx(json& j)
 {
-    int pointsPerUnusedFavorToken =
-        j.at("pointsPerUnusedFavorToken").get<int>();
+    int pointsPerUnusedFavorToken = j.at("pointsPerUnusedFavorToken").get<int>();
     int minusPointsPerEmptyField = j.at("minusPointsPerEmptyField").get<int>();
     int pointsPerProcValue = j.at("pointsPerProcValue").get<int>();
 
-    return std::make_unique<ScoreContext>(pointsPerUnusedFavorToken,
-                                          minusPointsPerEmptyField,
-                                          pointsPerProcValue);
+    return std::make_unique<ScoreContext>(
+        pointsPerUnusedFavorToken, minusPointsPerEmptyField, pointsPerProcValue);
 }
 
-inline void from_json(const json& j, PlayerCountRelatedGameInformation& pi)
-{
+inline void from_json(const json& j, PlayerCountRelatedGameInformation& pi) {
     j.at("PlayerCount").get_to(pi.playerCount);
     j.at("DiceCount").get_to(pi.diceCount);
 }
 
-inline dice_config_c get_dice_config(json& j)
-{
+inline dice_config_c get_dice_config(json& j) {
     if (!j.is_array()) {
         throw std::invalid_argument {
-            "Dice config should be an array consisting of dice configurations "
-            "by each used color"};
+            "Dice config should be an array consisting of dice configurations by each used color"};
     }
 
     dice_config_c diceConfig = std::make_unique<DiceConfig>();
 
     for (auto&& json_obj : j) {
         color_t diceColor = json_obj.at("Color").get<color_t>();
-
-        diceConfig->diceByColor[diceColor].diceCount =
-            json_obj.at("DiceCount").get<size_t>();
+        diceConfig->diceByColor[diceColor].diceCount = json_obj.at("DiceCount").get<size_t>();
     }
 
     return diceConfig;
 }
 
-inline void process_json_config_file(const fs::path& path,
-                                     game_ctx_builder_by_player_count_t& dest)
-{
+inline void process_json_config_file(const fs::path& path, game_ctx_builder_by_player_count_t& dest) {
     std::ifstream ifs(path);
     json jf = json::parse(ifs);
 
@@ -144,14 +134,11 @@ inline void process_json_config_file(const fs::path& path,
         jf.at("PlayerCountRelatedInformation")
             .get<std::vector<PlayerCountRelatedGameInformation>>();
 
-    cached_game_ctx_builder_t gameCtxBuilder =
-        GameContextBuilder::create(playerRelatedInformation, std::move(puocCtx),
-                                   std::move(tcCtx), boardConfig);
-    gameCtxBuilder->add_selectable_wpc(
-        get_selectable_wpc(jf.at("SelectableWPC"), boardConfig));
+    cached_game_ctx_builder_t gameCtxBuilder = GameContextBuilder::create(
+        playerRelatedInformation, std::move(puocCtx), std::move(tcCtx), boardConfig);
+    gameCtxBuilder->add_selectable_wpc(get_selectable_wpc(jf.at("SelectableWPC"), boardConfig));
     gameCtxBuilder->add_score_ctx(get_score_ctx(jf.at("ScoreContext")));
-    gameCtxBuilder->add_wpc_choice_per_player(
-        jf.at("wpcChoicePerPlayer").get<size_t>());
+    gameCtxBuilder->add_wpc_choice_per_player(jf.at("wpcChoicePerPlayer").get<size_t>());
     gameCtxBuilder->add_number_of_rounds(jf.at("NumberOfRounds").get<size_t>());
     gameCtxBuilder->add_dice_config(get_dice_config(jf.at("DiceConfig")));
     gameCtxBuilder->set_name(path.stem().string());
@@ -159,8 +146,7 @@ inline void process_json_config_file(const fs::path& path,
     for (auto&& playerRelatedInfo : playerRelatedInformation) {
         auto playerCountCtxIt = dest.find(playerRelatedInfo.playerCount);
         if (playerCountCtxIt == dest.end()) {
-            dest.insert({playerRelatedInfo.playerCount,
-                         cached_game_ctx_builder_c {gameCtxBuilder}});
+            dest.insert({playerRelatedInfo.playerCount, cached_game_ctx_builder_c {gameCtxBuilder}});
         }
         else {
             playerCountCtxIt->second.push_back(gameCtxBuilder);
@@ -176,27 +162,23 @@ inline void process_json_config_file(const fs::path& path,
 class GameConfigReader
 {
   public:
-    static inline game_ctx_builder_by_player_count_t
-    get_all_available_game_contexts()
-    {
+    static inline game_ctx_builder_by_player_count_t get_all_available_game_contexts() {
         game_ctx_builder_by_player_count_t allDefinedGameCtx;
-
         for (auto&& entry : fs::recursive_directory_iterator(gameConfigDir)) {
-            if (entry.is_regular_file()) {
-                if (entry.path().extension() != ".json") {
-                    std::cerr << "Invalid config file found: " << entry.path()
-                              << std::endl;
-                }
-                else {
-                    try {
-                        process_json_config_file(entry.path(),
-                                                 allDefinedGameCtx);
-                    }
-                    catch (std::exception& e) {
-                        std::cerr << "Invalid json config: " << entry.path()
-                                  << " - " << e.what() << std::endl;
-                    }
-                }
+            if (!entry.is_regular_file()) {
+                continue;
+            }
+            
+            if (entry.path().extension() != ".json") {
+                std::cerr << "Invalid config file found: " << entry.path() << std::endl;
+                continue;
+            }
+
+            try {
+                process_json_config_file(entry.path(), allDefinedGameCtx);
+            }
+            catch (std::exception& e) {
+                std::cerr << "Invalid json config: " << entry.path() << " - " << e.what() << std::endl;
             }
         }
 

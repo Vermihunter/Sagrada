@@ -4,17 +4,14 @@
 #include "GameCache.h"
 
 game_context_builder_t GameContextBuilder::create(
-    const std::vector<PlayerCountRelatedGameInformation>&
-        playerCountRelatedConfigs,
+    const std::vector<PlayerCountRelatedGameInformation>& playerCountRelatedConfigs,
     puoc_context_t _puocContext, tc_context_t _tcContext,
     board_config_t boardConfig)
 {
-    if (_puocContext->cards_per_game() >
-        _puocContext->get_current_game_puocs().size()) {
+    if (_puocContext->cards_per_game() > _puocContext->get_current_game_puocs().size()) {
         throw GameContextBuildingException {
             "There are less different card configurations than the required "
-            "amount of cards in the "
-            "game!"};
+            "amount of cards in the game!"};
     }
 
     if (_tcContext->cards_per_game() >

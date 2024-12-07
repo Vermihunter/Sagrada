@@ -1,5 +1,4 @@
 #include "GameCache.h"
-
 #include "GameContextBuilder.h"
 
 cached_game_ctx_builder_t GameCache::get_context(size_t playerCount,

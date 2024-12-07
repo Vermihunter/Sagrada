@@ -1,5 +1,6 @@
 #include "OnlyAIPlayerController.h"
 
+
 OnlyAIPlayerController::OnlyAIPlayerController(
     Game& _game, const ai_player_config_pc& configs,
     const bool gameDeterministic)

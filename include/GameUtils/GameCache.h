@@ -3,7 +3,7 @@
 
 #include <unordered_map>
 
-#include "BoardConfig.h"
+// #include "BoardConfig.h"
 #include "Typedefs.h"
 
 /**
@@ -13,10 +13,8 @@
  * The information stored in the singleton object is read from
  * config files and define the usable configurations for the games.
  */
-struct GameCache
-{
-    static GameCache& get()
-    {
+struct GameCache {
+    static GameCache& get() {
         static GameCache cache;
         return cache;
     }
@@ -44,7 +42,7 @@ struct GameCache
     cached_game_ctx_builder_t get_context(size_t playerCount,
                                           const std::string& ctxName);
 
-  private:
+private:
     wpc_cache_t wpcByBoardConfig;
     game_ctx_builder_by_player_count_t definedContexts;
 

@@ -6,7 +6,6 @@
 #include "AI_Player.h"
 #include "AI_PlayerNames.h"
 #include "ControllerWithAIPlayer.h"
-#include "DefaultGameCreator.h"
 #include "GameContext.h"
 #include "RandomGenerator.h"
 
