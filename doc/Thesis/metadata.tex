@@ -1,0 +1,100 @@
+%%% Please fill in basic information on your thesis, which will be automatically
+%%% inserted at the right places.
+
+% Type of your thesis:
+%	"bc" for Bachelor's
+%	"mgr" for Master's
+%	"phd" for PhD
+%	"rig" for rigorosum
+\def\ThesisType{bc}
+
+% Language of your study programme:
+%	"cs" for Czech
+%	"en" for English
+\def\StudyLanguage{cs}
+
+% Thesis title in English (exactly as in the official assignment)
+% (Note: \xxx is a "ToDo label" which makes the unfilled visible. Remove it.)
+\def\ThesisTitle{\xxx{Artificial Intelligence for the Board Game Sagrada}}
+
+% Author of the thesis (you)
+\def\ThesisAuthor{\xxx{Ákos Vermes}}
+
+% Year when the thesis is submitted
+\def\YearSubmitted{\xxx{2024}}
+
+% Name of the department or institute, where the work was officially assigned
+% (according to the Organizational Structure of MFF UK in English,
+% see https://www.mff.cuni.cz/en/faculty/organizational-structure,
+% or a full name of a department outside MFF)
+\def\Department{\xxx{Department of Software and Computer Science Education (KSVI)}}
+
+% Is it a department (katedra), or an institute (ústav)?
+\def\DeptType{\xxx{Department}}
+
+% Thesis supervisor: name, surname and titles
+\def\Supervisor{\xxx{Adam Dingle, M.Sc}}
+
+% Supervisor's department (again according to Organizational structure of MFF)
+\def\SupervisorsDepartment{\xxx{Department of Software and Computer Science Education (KSVI)}}
+
+% Study programme (does not apply to rigorosum theses)
+\def\StudyProgramme{\xxx{Computer Science (B0613A140006)}}
+
+% An optional dedication: you can thank whomever you wish (your supervisor,
+% consultant, who provided you with tea and pizza, etc.)
+\def\Dedication{%
+\xxx{I want to express my heartfelt appreciation to Adam Dingle for his incredible support and patience throughout this journey.
+His guidance was extremely helpful, especially during the times when the process took longer than expected. 
+The tools he introduced for software and AI development were crucial to the success of this project and I have learned a lot from him.
+}
+}
+
+% Abstract (recommended length around 80-200 words; this is not a copy of your thesis assignment!)
+\def\Abstract{%
+\xxx{The application of artificial intelligence to board games has become widespread in recent years inspired by achievements in chess and Go.
+This thesis presents a detailed exploration of artificial intelligence techniques in an implementation of the board game Sagrada.
+Sagrada presents challenges for artificial intelligence agents due to the complexity of the game, the high branching factor and the presence of hidden and stochastic 
+information in the game. The primary focus of the thesis is on implementing and comparing the performance of minimax, Monte Carlo Tree Search (MCTS), 
+and rules-based algorithms.
+  }
+}
+
+% 3 to 5 keywords (recommended) separated by \sep
+% Keywords are useful for indexing and searching for the theses by topic.
+\def\ThesisKeywords{%
+\xxx{artificial intelligence\sep board game\sep heuristic}
+}
+
+% If any of your metadata strings contains TeX macros, you need to provide
+% a plain-text version for use in XMP metadata embedded in the output PDF file.
+% If you are not sure, check the generated thesis.xmpdata file.
+\def\ThesisAuthorXMP{\ThesisAuthor}
+\def\ThesisTitleXMP{\ThesisTitle}
+\def\ThesisKeywordsXMP{\ThesisKeywords}
+\def\AbstractXMP{\Abstract}
+
+% If your abstracts are long and do not fit in the infopage, you can make the
+% fonts a bit smaller by this setting. (Also, you should try to compress your abstract more.)
+\def\InfoPageFont{}
+%\def\InfoPageFont{\small}  % uncomment to decrease font size
+
+% If you are studing in a Czech programme, you also need to provide metadata in Czech:
+% (in English programmes, this is not used anywhere)
+
+\def\ThesisTitleCS{\xxx{Umělá inteligence pro deskovou hru Sagrada}}
+\def\DepartmentCS{\xxx{Katedra softwaru a výuky informatiky (KSVI)}}
+\def\DeptTypeCS{\xxx{Katedra}}
+\def\SupervisorsDepartmentCS{\xxx{Katedra softwaru a výuky informatiky (KSVI)}}
+\def\StudyProgrammeCS{\xxx{Informatika (B0613A140006)}}
+
+\def\ThesisKeywordsCS{%
+\xxx{umělá inteligence\sep desková hra\sep heuristika}
+}
+
+\def\AbstractCS{%
+\xxx{Aplikace umělé inteligence na deskové hry se v posledních letech rozšířila, což bylo inspirováno úspěchy ve šachu a Go.
+Tato práce představuje podrobný průzkum technik umělé inteligence v implementaci deskové hry Sagrada.
+Sagrada představuje pro hráče řízené umělou inteligencí výzvy kvůli složitosti hry, vysokému větvení a přítomnosti skrytých a stochastických informací ve hře.
+Hlavním zaměřením práce je implementace a srovnání výkonu algoritmů minimax, Monte Carlo Tree Search (MCTS) a algoritmů založených na pravidlech.}
+}

@@ -1,0 +1,22 @@
+/* 
+I know what you think... 
+Is this guy really using a single CSS file with 16 lines?
+Well, at least I tried out a new thing
+*/
+
+grid {
+    background-color: lightblue;
+    border: 5px double darkblue;
+}
+
+label {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font: 17px Georgia, serif;
+    padding: 8px;
+}
+
+label#tournament_header_label {
+    font: italic bold 22px Georgia, serif;
+}

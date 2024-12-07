@@ -1,0 +1,6 @@
+#ifndef RECTANGULAR_BOARD_VIEW_CONSTANTS_H
+#define RECTANGULAR_BOARD_VIEW_CONSTANTS_H
+
+constexpr double rectangularBoardViewWidthToHeightRatio = 1.1;
+
+#endif // RECTANGULAR_BOARD_VIEW_CONSTANTS_H

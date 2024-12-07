@@ -1,0 +1,953 @@
+{
+    "OutputDir": "doc/Thesis/img",
+    "RandomAgentsBranchingFactorPlotData": {
+        "RelativePath": "random_agents_branching_factor.pdf",
+        "Tournaments": [
+            {
+                "Players": ["first", "random"],
+                "GameCount": 1000,
+                "TournamentResultDir": "random_move_statistics",
+                "OtherOptions": "-ms"
+            }
+        ]
+    },
+    "HeuristicFilterShowcase": {
+        "RelativePath": "heuristic_filter.pdf",
+        "Tournaments": [
+            {
+                "Players": ["minimax-depth=2,worlds=4", "mcts-it=70,worlds=3,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 300,
+                "TournamentResultDir": "heuristic_filter_statistics", 
+                "OtherOptions": "-ms"
+            }
+        ]
+    },
+    "MinimaxAgentBranchingFactorPlotData": {
+        "RelativePath": "minimax_agent_branching_factor.pdf",
+        "Tournaments": [
+            {
+                "Players": ["minimax-depth=2,worlds=4", "random"],
+                "GameCount": 1000,
+                "TournamentResultDir": "minimax_move_statistics", 
+                "OtherOptions": "-ms"
+            }
+        ]   
+    },
+    "RulesBasedBothStrategiesBranchingFactorPlotData": {
+        "RelativePath": "rules-based_agents_branching_factor.pdf",
+        "Tournaments": [
+            {    
+                "Players": ["rules-based-strategy=all_moves", "rules-based-strategy=only_dtfm"],
+                "GameCount": 1000,
+                "TournamentResultDir": "rules-based_move_statistics", 
+                "OtherOptions": "-ms"
+            }
+        ]
+    },
+    "FinalResultsTournamentsDataKey": {
+        "RelativePath": "final_results.pdf",
+        "Tournaments": [
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "rules-based-strategy=all_moves"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_rules-based-strategy=all_moves",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "minimax-depth=1,worlds=2000"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_minimax-depth=1,worlds=2000",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "minimax-depth=2,worlds=200"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_minimax-depth=2,worlds=200",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "minimax-depth=3,worlds=20"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_minimax-depth=3,worlds=20",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "minimax-depth=4,worlds=2"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_minimax-depth=4,worlds=2",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=only_dtfm", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=only_dtfm_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "minimax-depth=1,worlds=2000"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_minimax-depth=1,worlds=2000",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "minimax-depth=2,worlds=200"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_minimax-depth=2,worlds=200",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "minimax-depth=3,worlds=20"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_minimax-depth=3,worlds=20",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "minimax-depth=4,worlds=2"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_minimax-depth=4,worlds=2",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["rules-based-strategy=all_moves", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/rules-based-strategy=all_moves_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "minimax-depth=2,worlds=200"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_minimax-depth=2,worlds=200",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "minimax-depth=3,worlds=20"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_minimax-depth=3,worlds=20",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "minimax-depth=4,worlds=2"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_minimax-depth=4,worlds=2",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=1,worlds=2000", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=1,worlds=2000_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "minimax-depth=3,worlds=20"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_minimax-depth=3,worlds=20",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "minimax-depth=4,worlds=2"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_minimax-depth=4,worlds=2",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=2,worlds=200", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=2,worlds=200_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "minimax-depth=4,worlds=2"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_minimax-depth=4,worlds=2",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=20", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=3,worlds=20_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=4,worlds=2", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4,worlds=2_vs_mcts-it=270,expl=1.0,worlds=20,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=4,worlds=2", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4,worlds=2_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=4,worlds=2", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4,worlds=2_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=4,worlds=2", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4,worlds=2_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["minimax-depth=4,worlds=2", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4,worlds=2_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=270,expl=1.0,worlds=20,playout=first", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=270,expl=1.0,worlds=20,playout=first_vs_mcts-it=360,expl=1.8,worlds=15,playout=first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=270,expl=1.0,worlds=20,playout=first", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=270,expl=1.0,worlds=20,playout=first_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=270,expl=1.0,worlds=20,playout=first", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=270,expl=1.0,worlds=20,playout=first_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=270,expl=1.0,worlds=20,playout=first", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=270,expl=1.0,worlds=20,playout=first_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=360,expl=1.8,worlds=15,playout=first", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=360,expl=1.8,worlds=15,playout=first_vs_mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=360,expl=1.8,worlds=15,playout=first", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=360,expl=1.8,worlds=15,playout=first_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=360,expl=1.8,worlds=15,playout=first", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=360,expl=1.8,worlds=15,playout=first_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm", "random"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm_vs_random",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm_vs_first",
+                "OtherOptions": "-b"
+            },
+            {
+                "Players": ["random", "first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/random_vs_first",
+                "OtherOptions": "-b"
+            }
+        ]
+    },
+    "DeterministicResultsTournamentsDataKey": {
+        "RelativePath": "deterministic_final_results.pdf",
+        "Tournaments": [
+            {
+                "Players": ["minimax-depth=4", "mcts-it=5400,expl=1.0,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4_vs_mcts-it=5400,expl=1.0,playout=first",
+                "OtherOptions": "-b -d"
+            },
+            {
+                "Players": ["minimax-depth=4", "mcts-it=5400,expl=1.8,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4_vs_mcts-it=5400,expl=1.8,playout=first",
+                "OtherOptions": "-b -d"
+            },
+            {
+                "Players": ["minimax-depth=4", "mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/minimax-depth=4_vs_mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b -d"
+            },
+            {
+                "Players": ["mcts-it=5400,expl=1.0,playout=first", "mcts-it=5400,expl=1.8,playout=first"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=5400,expl=1.0,playout=first_vs_mcts-it=5400,expl=1.8,playout=first",
+                "OtherOptions": "-b -d"
+            },
+            {
+                "Players": ["mcts-it=5400,expl=1.0,playout=first", "mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=5400,expl=1.0,playout=first_vs_mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b -d"
+            },
+            {
+                "Players": ["mcts-it=5400,expl=1.8,playout=first", "mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 320,
+                "TournamentResultDir": "final_results_large/mcts-it=5400,expl=1.8,playout=first_vs_mcts-it=820,expl=1.4,playout=rules-based-strategy=only_dtfm",
+                "OtherOptions": "-b -d"
+            }
+        ]
+    },
+    "MCTSBranchingFactorPlotData": {
+        "RelativePath": "mcts_average_branching_factor.pdf",
+        "Tournaments": [
+            {
+                "Players": ["minimax-depth=3,worlds=1", "mcts-it=230,worlds=1,playout=minimax-depth=1"],
+                "GameCount": 100,
+                "TournamentResultDir": "mcts_branching_factor/minimax_branching_factor",
+                "OtherOptions": "-ms"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=1", "mcts-it=5400,worlds=1,playout=first"],
+                "GameCount": 100,
+                "TournamentResultDir": "mcts_branching_factor/first_branching_factor",
+                "OtherOptions": "-ms"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=1", "mcts-it=300,worlds=1,playout=rules-based-strategy=all_moves"],
+                "GameCount": 100,
+                "TournamentResultDir": "mcts_branching_factor/all_moves_branching_factor",
+                "OtherOptions": "-ms"
+            },
+            {
+                "Players": ["minimax-depth=3,worlds=1", "mcts-it=820,worlds=1,playout=rules-based-strategy=only_dtfm"],
+                "GameCount": 100,
+                "TournamentResultDir": "mcts_branching_factor/only_dtfm_branching_factor",
+                "OtherOptions": "-ms"
+            }
+        ]
+    },
+    "MCTSExplorationFactorPlayoutFirst": {
+        "RelativePath": "mcts_playout_first_exploration_const.pdf",
+        "Tournaments": [
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=0.4,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=0.6,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=0.8,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.0,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.2,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.4,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.6,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=1.8,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=2.0,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=2.2,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=2.4,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=360,expl=2.6,worlds=15,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w15_it360_expl2.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=0.4,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=0.6,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=0.8,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.0,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.2,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.4,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.6,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=1.8,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=2.0,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=2.2,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=2.4,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=270,expl=2.6,worlds=20,playout=first"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_first/w20_it270_expl2.6",
+            "GameCount": 500
+        }
+        ]
+    },
+    "MCTSExplorationFactorPlayoutRulesBasedOnlyDTFM": {
+        "RelativePath": "mcts_playout_rules_based_only_dtfm_exploration_const.pdf",
+        "Tournaments": [
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=0.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=0.6,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=0.8,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.0,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.2,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.6,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=1.8,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=2.0,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=2.2,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=2.4,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=135,expl=2.6,worlds=6,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w6_it135_expl2.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=0.4,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=0.6,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=0.8,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=1.0,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=1.2,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=1.4,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=1.6,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=1.8,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=2.0,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=2.2,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=2.4,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=100,expl=2.6,worlds=8,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w8_it100_expl2.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.4,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.6,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.8,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.0,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.2,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.4,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.6,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.8,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.0,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.2,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.4,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.6,worlds=10,playout=rules-based-strategy=only_dtfm"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_only_dtfm/w10_it80_expl2.6",
+            "GameCount": 500
+        }
+        ]
+    },
+    "MCTSExplorationFactorPlayoutRulesBasedAllMoves": {
+        "RelativePath": "mcts_playout_rules_based_all_moves_exploration_const.pdf",
+        "Tournaments": [
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=0.4,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=0.6,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=0.8,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=1.0,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=1.2,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=1.4,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=1.6,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=1.8,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=2.0,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=2.2,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=2.4,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=75,expl=2.6,worlds=4,playout=rules-based-strategy=all_moves"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_rules_based_all_moves/w4_it75_expl2.6",
+            "GameCount": 500
+        }
+        ]
+    },
+    "MCTSExplorationFactorPlayoutMinimax1": {
+        "RelativePath": "mcts_playout_minimax1_exploration_const.pdf",
+        "Tournaments": [
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=0.4,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=0.6,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=0.8,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=1.0,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=1.2,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=1.4,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=1.6,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=1.8,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=2.0,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=2.2,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=2.4,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=115,expl=2.6,worlds=2,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w2_it115_expl2.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.4,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl0.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.6,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl0.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=0.8,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl0.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.0,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl1.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.2,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl1.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.4,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl1.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.6,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl1.6",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=1.8,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl1.8",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.0,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl2.0",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.2,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl2.2",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.4,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl2.4",
+            "GameCount": 500
+        },
+        {
+            "Players": ["rules-based-strategy=all_moves", "mcts-it=80,expl=2.6,worlds=3,playout=minimax-depth=1"],
+            "TournamentResultDir": "exploration_constant_experiment/mcts_playout_minimax1/w3_it80_expl2.6",
+            "GameCount": 500
+        }
+        ]
+    }
+
+}

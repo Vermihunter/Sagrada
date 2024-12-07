@@ -1,0 +1,28 @@
+{
+    "puocIDs": [
+        0,
+        8,
+        2
+    ],
+
+    "tcIDs": [
+        0,
+        1,
+        2
+    ],
+    
+    "players": [
+        {
+            "ID": 0,
+            "PrivateObjectiveCard": {
+                "Color": "Purple"
+            }
+        },
+        {
+            "ID": 1,
+            "PrivateObjectiveCard": {
+                "Color": "Red"
+            }
+        }
+    ]
+}

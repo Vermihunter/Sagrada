@@ -1,0 +1,6 @@
+#ifndef PRIVATE_OBJECTIVE_CARD_VIEW_CONSTANTS_H
+#define PRIVATE_OBJECTIVE_CARD_VIEW_CONSTANTS_H
+
+constexpr static double procWidthToHeightRatio = 5.0 / (7.0);
+
+#endif // PRIVATE_OBJECTIVE_CARD_VIEW_CONSTANTS_H

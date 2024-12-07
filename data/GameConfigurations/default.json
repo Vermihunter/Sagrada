@@ -1,0 +1,103 @@
+{
+    "PuocConfig": {
+        "puoc_contexts": [
+            {
+                "PuocId": 0,
+                "SatisfactionValue": 5
+            },
+            {
+                "PuocId": 1,
+                "SatisfactionValue": 6
+            },
+            {
+                "PuocId": 2,
+                "SatisfactionValue": 4
+            },
+            {
+                "PuocId": 3,
+                "SatisfactionValue": 5
+            },
+            {
+                "PuocId": 4,
+                "SatisfactionValue": 2
+            },
+            {
+                "PuocId": 5,
+                "SatisfactionValue": 2
+            },
+            {
+                "PuocId": 6,
+                "SatisfactionValue": 2
+            },
+            {
+                "PuocId": 7,
+                "SatisfactionValue": 5
+            },
+            {
+                "PuocId": 8,
+                "SatisfactionValue": 4
+            },
+            {
+                "PuocId": 9,
+                "SatisfactionValue": 1
+            }
+        ],
+        "cards_per_game": 3
+    },
+    "TcConfig": {
+        "selectable_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "cards_per_game": 3
+    },
+    "PlayerCountRelatedInformation": [
+        {
+            "PlayerCount": 2,
+            "DiceCount": 5
+        },
+        {
+            "PlayerCount": 3,
+            "DiceCount": 7
+        },
+        {
+            "PlayerCount": 4,
+            "DiceCount": 9
+        }
+    ],
+    "DiceConfig": [
+        {
+            "Color": "Blue",
+            "DiceCount": 18
+        },
+        {
+            "Color": "Red",
+            "DiceCount": 18
+        },
+        {
+            "Color": "Green",
+            "DiceCount": 18
+        },
+        {
+            "Color": "Yellow",
+            "DiceCount": 18
+        },
+        {
+            "Color": "Purple",
+            "DiceCount": 18
+        }
+    ],
+    "ScoreContext": {
+        "pointsPerUnusedFavorToken": 1,
+        "minusPointsPerEmptyField": 1,
+        "pointsPerProcValue": 1
+    },
+    "wpcChoicePerPlayer": 4,
+    "NumberOfRounds": 10,
+    "SelectableWPC": [
+        "Lux Mundi", "Lux Astram", "Luz Celestial", "Fulgor del Cielo", "Shadow Thief", "Sun Catcher", "Bellesguard", "Batllo", "Sun's Glory", "Firelight", "Gravitas", "Water of Life", "Comitas", "Chromatic Splendor", "Aurora Sagradis", "Aurorae Magfinicus", "Firmitas", "Kaleidoscopic Dream", "Symphony of Light", "Virtus", "Via Lux", "Industria", "Fractal Drops", "Ripples of Light"
+    ],
+    "BoardConfig": {
+        "BoardType": "Rectangle",
+        "Width": 5,
+        "Height": 4
+    }
+    
+}

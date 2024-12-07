@@ -1,0 +1,192 @@
+Lux Mundi
+6
+5 4 Rectangle
+__1__
+1G3B2
+B546G
+_B5G_
+-----
+Lux Astram
+5
+5 4 Rectangle
+_1GP4
+6P25G
+1G53P
+_____
+-----
+Luz Celestial
+3
+5 4 Rectangle
+__R5_
+P4_G3
+6__B_
+_Y2__
+-----
+Fulgor del Cielo
+5
+5 4 Rectangle
+_BR__
+_45_B
+B2_R5
+6R31_
+-----
+Shadow Thief
+5
+5 4 Rectangle
+6P__5
+5_P__
+R6_P_
+YR543
+-----
+Sun Catcher
+3
+5 4 Rectangle
+_B2_Y
+_4_R_
+__5Y_
+G3__P
+-----
+Bellesguard
+3
+5 4 Rectangle
+B6__Y
+_3B__
+_562_
+_4_1G
+-----
+Batllo
+5
+5 4 Rectangle
+__6__
+_5B4_
+3GYP2
+14R53
+-----
+Sun's Glory
+6
+5 4 Rectangle
+1PY_4
+PY__6
+Y__53
+_5421
+-----
+Firelight
+5
+5 4 Rectangle
+3415_
+_62_Y
+___YR
+5_YR6
+-----
+Gravitas
+5
+5 4 Rectangle
+1_3B_
+_2B__
+6B_4_
+B52_1
+-----
+Water of Life
+6
+5 4 Rectangle
+6B__1
+_5B__
+4R2B_
+G6Y3P
+-----
+Comitas
+5
+5 4 Rectangle
+Y_2_6
+_4_5Y
+___Y5
+12Y3_
+-----
+Chromatic Splendor
+4
+5 4 Rectangle
+__G__
+2Y5B1
+_R3P_
+1_6_4
+-----
+Aurora Sagradis
+4
+5 4 Rectangle
+R_B_Y
+4P3G2
+_1_5_
+__6__
+-----
+Aurorae Magfinicus
+5
+5 4 Rectangle
+5GBP2
+P___Y
+Y_6_P
+1__G4
+-----
+Firmitas
+5
+5 4 Rectangle
+P6__3
+5P3__
+_2P1_
+_15P4
+-----
+Kaleidoscopic Dream
+4
+5 4 Rectangle
+YB__1
+G_5_4
+3_R_G
+2__BY
+-----
+Symphony of Light
+6
+5 4 Rectangle
+2_5_1
+Y6P2R
+_B4G_
+_3_5_
+-----
+Virtus
+5
+5 4 Rectangle
+4_25G
+__6G2
+_3G4_
+5G1__
+-----
+Via Lux
+4
+5 4 Rectangle
+Y_6__
+_15_2
+3YR/_
+__43R
+-----
+Industria
+6
+5 4 Rectangle
+1R3_6
+54R2_
+__5R1
+___3R
+-----
+Fractal Drops
+3
+5 4 Rectangle
+_4_Y6
+R_2__
+__RP1
+BY___
+-----
+Ripples of Light
+5
+5 4 Rectangle
+___R5
+__P4B
+_B3Y6
+Y2G1R
+-----
