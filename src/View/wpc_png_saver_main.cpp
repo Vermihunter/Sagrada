@@ -9,15 +9,8 @@
 #include "RectangularBoardView.h"
 #include "Typedefs.h"
 #include "ViewConstants.h"
+#include "GameCacheInitializer.h"
 
-// Function to draw on the surface, replace with your actual drawing code
-void draw_on_surface(const Cairo::RefPtr<Cairo::Context>& cr)
-{
-    // Example drawing: Draw a red rectangle
-    cr->set_source_rgb(1.0, 0.0, 0.0); // Red color
-    cr->rectangle(10, 10, 100, 100);   // Rectangle dimensions
-    cr->fill();
-}
 
 // Function to save DrawingArea content
 void save_drawing_area_to_png(std::unique_ptr<RectangularBoardView>& boardView)
@@ -50,21 +43,19 @@ int main(int argc, char* argv[])
     auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
 
     std::vector<std::unique_ptr<RectangularBoardView>> wpcViews;
-    Gtk::Window window;
-    // window.set_default_size(200, 200);
+   // Gtk::Window window;
+    GameCacheInitializer::initialize_cache();
 
     const int wpcWidth = 400;
     for (auto&& [_boardConfig, allWpc] : GameCache::get().get_wpc()) {
         for (auto&& wpc : allWpc) {
             wpcViews.push_back(std::make_unique<RectangularBoardView>(
-                *wpc,
-                SizeInPixels {wpcWidth,
-                              size_t(wpcWidth /
-                                     rectangularBoardViewWidthToHeightRatio)}));
+                *wpc, SizeInPixels {wpcWidth,size_t(wpcWidth / rectangularBoardViewWidthToHeightRatio)}));
+
             save_drawing_area_to_png(wpcViews.back());
         }
     }
 
-    window.show_all();
-    return app->run(window);
+    //window.show_all();
+    //return app->run(window);
 }

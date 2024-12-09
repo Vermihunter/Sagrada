@@ -1,0 +1,11 @@
+log
+
+subprojects/packagecache
+subprojects/googletest-release-1.12.1/*
+subprojects/argparse-2.9/*
+subprojects/nlohmann_json-3.11.2/*
+
+build
+build_opt
+
+.vscode/*

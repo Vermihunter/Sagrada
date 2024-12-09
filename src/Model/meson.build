@@ -20,3 +20,10 @@ model_src = [
     'RoundTrack.cpp', 
     'EvalState.cpp' 
 )]
+
+
+# Model shared library
+model_lib = static_library('model', 
+    [model_src],
+    include_directories: [model_inc, utils_inc] 
+)

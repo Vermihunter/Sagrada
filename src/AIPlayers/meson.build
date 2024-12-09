@@ -11,3 +11,10 @@ ai_src = files(
     'MinimaxPlayer.cpp', 
     'MinimaxPlayerConfig.cpp'
 )
+
+
+ai_lib = static_library('ai_lib',
+    [ai_src],
+    include_directories: [tournament_inc, model_inc, game_utils_inc, utils_inc, ai_inc, controller_inc, sagrada_json_inc]
+)
+
