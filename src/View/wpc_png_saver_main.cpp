@@ -43,7 +43,6 @@ int main(int argc, char* argv[])
     auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
 
     std::vector<std::unique_ptr<RectangularBoardView>> wpcViews;
-   // Gtk::Window window;
     GameCacheInitializer::initialize_cache();
 
     const int wpcWidth = 400;
@@ -56,6 +55,4 @@ int main(int argc, char* argv[])
         }
     }
 
-    //window.show_all();
-    //return app->run(window);
 }
