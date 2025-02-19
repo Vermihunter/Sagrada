@@ -95,3 +95,11 @@ doxygen Doxyfile
 ```
 
 Generating this documentation requires Doxygen and [graphviz](https://graphviz.org/) installed in the system.
+
+## Acknowledgments
+
+I would like to express my gratitude to Adam Dingle, M.Sc. for his guidance and support throughout this project. His insights and expertise have been invaluable in shaping the final result.
+
+A special thank you to Csilla Szabó for drawing the beautiful illustrations that enrich this project. Your artwork adds a unique and artistic touch that truly enhances the experience.
+
+Thank you both for your contributions!
