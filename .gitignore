@@ -9,3 +9,9 @@ build
 build_opt
 
 .vscode/*
+
+**/**.xml
+**/**.bcf
+**/**.out
+**/**.gz
+**/**.log
