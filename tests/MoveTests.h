@@ -4,9 +4,7 @@
 #include "DefaultGameCreator.h"
 #include "SagradaTest.h"
 
-class MoveTest : public ::testing::TestWithParam<int> {
-
-};
+class MoveTest : public ::testing::TestWithParam<int> {};
 /*
 TEST_P(MoveTest, AllGeneratedCorrect) {
   int seed = GetParam();
@@ -16,18 +14,16 @@ TEST_P(MoveTest, AllGeneratedCorrect) {
     move_c possibleMoves = game->possible_moves();
     for(auto&& possibleMove : possibleMoves) {
         game_t gameClone = game->clone();
-        move_t moveClone = possibleMove->clone(*game->get_ctx()->supply, *gameClone->get_ctx()->supply);
-        EXPECT_NO_THROW({
-            gameClone->move_request(moveClone);
+        move_t moveClone = possibleMove->clone(*game->get_ctx()->supply,
+*gameClone->get_ctx()->supply); EXPECT_NO_THROW({ gameClone->move_request(moveClone);
         });
     }
 
     game->move_request(possibleMoves[possibleMoves.size() - 1]);
   }
-  
+
   //EXPECT_TRUE(foo.Blah(GetParam()));
 }
 */
-
 
 #endif // MOVE_TESTS_H

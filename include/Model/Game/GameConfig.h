@@ -4,12 +4,11 @@
 #include "AI_PlayerConfig.h"
 #include "Typedefs.h"
 
-struct GameConfig
-{
-    int randomSeed;
-    bool gameDeterministic;
-    cached_game_ctx_builder_t gameCtxBuilder;
-    ai_player_config_c players;
+struct GameConfig {
+	int                       randomSeed;
+	bool                      gameDeterministic;
+	cached_game_ctx_builder_t gameCtxBuilder;
+	ai_player_config_c        players;
 };
 
 using game_config_t = std::unique_ptr<GameConfig>;

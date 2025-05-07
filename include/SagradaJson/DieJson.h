@@ -7,13 +7,13 @@
 
 void to_json(json& j, const Die* die)
 {
-    if (!die) {
-        j = json {};
-    }
-    else {
-        j = json {{"value", value_to_string.at(die->get_value())},
-                  {"color", color_to_string.at(die->get_color())}};
-    }
+	if (!die) {
+		j = json{};
+	}
+	else {
+		j = json{{"value", value_to_string.at(die->get_value())},
+		         {"color", color_to_string.at(die->get_color())}};
+	}
 }
 
 #endif // DIE_JSON_H

@@ -4,7 +4,7 @@
 #include <string>
 
 /** Data directory paths */
-const std::string dataDir = "data";
+const std::string dataDir       = "data";
 const std::string gameConfigDir = dataDir + "/GameConfigurations";
 const std::string WPCConfigPath = dataDir + "/WindowPatternCards.txt";
 

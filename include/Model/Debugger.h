@@ -7,12 +7,12 @@
 
 inline void print_all_moves(const move_c& moves, const std::string& msg)
 {
-    LOG_T(msg);
-    LOG_T("#######################");
-    for (auto&& move : moves) {
-        LOG_T(move);
-    }
-    LOG_T("#######################");
+	LOG_T(msg);
+	LOG_T("#######################");
+	for (auto&& move : moves) {
+		LOG_T(move);
+	}
+	LOG_T("#######################");
 }
 
 #endif // DEBUGGER_H

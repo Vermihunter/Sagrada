@@ -1,12 +1,12 @@
 #ifndef PRIVATE_OBJECTIVE_CARD_PATHS_BY_TYPE_h
 #define PRIVATE_OBJECTIVE_CARD_PATHS_BY_TYPE_h
 
-#include <unordered_map>
-
 #include "Attributes.h"
 #include "ViewConstants.h"
 
-const std::unordered_map<color_t, const std::string> procImagePaths {
+#include <unordered_map>
+
+const std::unordered_map<color_t, const std::string> procImagePaths{
     {color_t::BLUE, v_constants::procPictureDir + "/CardBlue.png"},
     {color_t::YELLOW, v_constants::procPictureDir + "/CardYellow.png"},
     {color_t::RED, v_constants::procPictureDir + "/CardRed.png"},

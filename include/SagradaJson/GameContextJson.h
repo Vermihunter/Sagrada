@@ -11,26 +11,22 @@
 #include "TcContextJson.h"
 #include "WpcJson.h"
 
-namespace nlohmann
-{
-template <>
-struct adl_serializer<GameContextBuilder>
-{
-    static void to_json(json& j, const GameContextBuilder& builder)
-    {
-        j = json {{"PuocConfig", builder.puocContext},
-                  {"TcConfig", builder.tcContext},
-                  {"PlayerCountRelatedInformation",
-                   builder.playerCountRelatedConfigs},
-                  {"ScoreContext", builder.ctx->scoreCtx},
-                  {"DiceConfig", builder.diceConfig},
-                  {"wpcChoicePerPlayer", builder.wpcChoicePerPlayer.value()},
-                  {"NumberOfRounds", builder.numberOfRounds.value()},
-                  {"SelectableWPC", builder.ctx->selectableWPC},
-                  {"BoardConfig", builder.boardConfig}
+namespace nlohmann {
+template <> struct adl_serializer<GameContextBuilder> {
+	static void to_json(json& j, const GameContextBuilder& builder)
+	{
+		j = json{{"PuocConfig", builder.puocContext},
+		         {"TcConfig", builder.tcContext},
+		         {"PlayerCountRelatedInformation", builder.playerCountRelatedConfigs},
+		         {"ScoreContext", builder.ctx->scoreCtx},
+		         {"DiceConfig", builder.diceConfig},
+		         {"wpcChoicePerPlayer", builder.wpcChoicePerPlayer.value()},
+		         {"NumberOfRounds", builder.numberOfRounds.value()},
+		         {"SelectableWPC", builder.ctx->selectableWPC},
+		         {"BoardConfig", builder.boardConfig}
 
-        };
-    }
+		};
+	}
 };
 
 } // namespace nlohmann

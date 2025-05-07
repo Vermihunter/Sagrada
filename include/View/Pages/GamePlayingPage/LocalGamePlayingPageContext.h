@@ -6,15 +6,13 @@
 
 class LocalGamePlayingPage;
 
-struct LocalGamePlayingPageContext : public GamePlayingPageContext
-{
+struct LocalGamePlayingPageContext : public GamePlayingPageContext {
   public:
-    LocalGamePlayingPageContext(
-        LocalGamePlayingPage& _parent, LocalPlayerController& controller,
-        const ViewContext& viewCtx,
-        std::unique_ptr<CommonGameElements> commonGameElements);
+	LocalGamePlayingPageContext(LocalGamePlayingPage& _parent, LocalPlayerController& controller,
+	                            const ViewContext&                  viewCtx,
+	                            std::unique_ptr<CommonGameElements> commonGameElements);
 
-    Gtk::Button button_PassMove;
+	Gtk::Button button_PassMove;
 };
 
 #endif // LOCAL_GAME_PLAYING_PAGE_CONTEXT_H

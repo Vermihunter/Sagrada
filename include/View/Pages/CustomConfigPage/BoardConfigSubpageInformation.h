@@ -6,10 +6,9 @@
 
 class BoardConfig;
 
-struct BoardConfigSubpageInformation
-{
-    BoardConfig* boardConfig;
-    wpc_c selectableWpc;
+struct BoardConfigSubpageInformation {
+	BoardConfig* boardConfig;
+	wpc_c        selectableWpc;
 };
 
 #endif // BOARD_CONFIG_SUBPAGE_INFORMATION_H

@@ -10,23 +10,21 @@
 #include "RandomGenerator.h"
 #include "SimulationGamePlayingPage.h"
 
-class SimulationConfigPageBase : public Page
-{
+class SimulationConfigPageBase : public Page {
   public:
-    SimulationConfigPageBase(const ViewContext& ctx,
-                             const std::string& pageName,
-                             size_t localPlayerCount = 0);
+	SimulationConfigPageBase(const ViewContext& ctx, const std::string& pageName,
+	                         size_t localPlayerCount = 0);
 
   protected:
-    virtual void on_show() override
-    {
-        Page::on_show();
-        pageElements.gameCtxWidgets.load_new_contexts();
-    }
+	virtual void on_show() override
+	{
+		Page::on_show();
+		pageElements.gameCtxWidgets.load_new_contexts();
+	}
 
-    CommonGameConfigElements pageElements;
+	CommonGameConfigElements pageElements;
 
-    virtual void start_button_clicked() = 0;
+	virtual void start_button_clicked() = 0;
 };
 
 #endif // SIMULATION_CONFIG_BASE_H

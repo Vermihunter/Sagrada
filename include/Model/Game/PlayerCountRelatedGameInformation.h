@@ -9,10 +9,9 @@
  * return the diceCount for each player count ( diceCount = (2 * playerCount) +
  * 1) but this class is defined to make the system more customizable
  */
-struct PlayerCountRelatedGameInformation
-{
-    size_t playerCount;
-    size_t diceCount;
+struct PlayerCountRelatedGameInformation {
+	size_t playerCount;
+	size_t diceCount;
 };
 
 #endif // PLAYER_COUNT_RELATED_GAME_INFORMATION_H

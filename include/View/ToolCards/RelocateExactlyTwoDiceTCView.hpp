@@ -4,15 +4,13 @@
 #include "RelocateExactlyTwoDiceTC.h"
 #include "RelocatingToolCardView.hpp"
 
-class RelocateExactlyTwoDiceTCView : public RelocatingToolCardView
-{
+class RelocateExactlyTwoDiceTCView : public RelocatingToolCardView {
   public:
-    RelocateExactlyTwoDiceTCView(ToolCardViewContainer& _parentContainer,
-                                 Game& game, ToolCard& _tc,
-                                 const SizeInPixels& size, size_t ind)
-        : RelocatingToolCardView(_parentContainer, game, _tc, size, ind)
-    {
-    }
+	RelocateExactlyTwoDiceTCView(ToolCardViewContainer& _parentContainer, Game& game, ToolCard& _tc,
+	                             const SizeInPixels& size, size_t ind)
+	    : RelocatingToolCardView(_parentContainer, game, _tc, size, ind)
+	{
+	}
 };
 
 #endif // RELOCATEEXACTLYTWODICETCVIEW_HPP

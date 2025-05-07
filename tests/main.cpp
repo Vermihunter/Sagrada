@@ -6,7 +6,7 @@
 
 int main(int argc, char** argv)
 {
-    testing::InitGoogleTest(&argc, argv);
-    GameCacheInitializer::initialize_cache();
-    return RUN_ALL_TESTS();
+	testing::InitGoogleTest(&argc, argv);
+	GameCacheInitializer::initialize_cache();
+	return RUN_ALL_TESTS();
 }

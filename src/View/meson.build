@@ -25,13 +25,6 @@ view_src = [
     )
 ]
 
-executable('sagrada', 
-    [view_src, 'main.cpp'], 
-    include_directories: [view_inc, tournament_inc,  signallers_inc, game_utils_inc,  model_inc, utils_inc, sagrada_json_inc, controller_inc, ai_inc], 
-    dependencies: [gtkdep, gtkmmdep, json_dep, argparse_dep],
-    link_with: [model_lib, game_utils_lib, tournament_lib, ai_lib, utils_lib, controller_lib]
-)
-
 
 executable('wpc_saver', 
     [view_src, 'wpc_png_saver_main.cpp'], 

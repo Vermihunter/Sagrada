@@ -7,10 +7,9 @@
  * @brief Represents a 2D point
  *
  */
-struct Point
-{
-    size_t x;
-    size_t y;
+struct Point {
+	size_t x;
+	size_t y;
 };
 
 #endif

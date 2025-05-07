@@ -7,9 +7,9 @@
 
 void to_json(json& j, const board_config_t& boardConfig)
 {
-    j = json {{"BoardType", boardConfig->type->get_name()},
-              {"Width", boardConfig->width},
-              {"Height", boardConfig->height}};
+	j = json{{"BoardType", boardConfig->type->get_name()},
+	         {"Width", boardConfig->width},
+	         {"Height", boardConfig->height}};
 }
 
 #endif // BOARD_CONFIG_JSON_H

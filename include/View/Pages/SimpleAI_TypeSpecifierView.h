@@ -5,14 +5,9 @@
 
 // Used for any AI type that has a config with default constructor -> First and
 // Random
-template <typename ConfigType>
-class SimpleAI_TypeSpecifierView : public AI_TypeSpecifierView
-{
+template <typename ConfigType> class SimpleAI_TypeSpecifierView : public AI_TypeSpecifierView {
   public:
-    virtual ai_player_config_t create_player() override
-    {
-        return std::make_unique<ConfigType>();
-    }
+	virtual ai_player_config_t create_player() override { return std::make_unique<ConfigType>(); }
 };
 
 #endif // SIMPLE_AI_TYPE_SPECIFIER_VIEW_H

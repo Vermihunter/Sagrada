@@ -7,19 +7,15 @@
  * @brief Context object for Public objective cards
  *
  */
-struct PublicObjectiveCardContext
-{
-    PublicObjectiveCardContext(int _satisfactionValue)
-        : satisfactionValue(_satisfactionValue)
-    {
-    }
+struct PublicObjectiveCardContext {
+	PublicObjectiveCardContext(int _satisfactionValue) : satisfactionValue(_satisfactionValue) {}
 
-    auto clone() { return std::make_unique<PublicObjectiveCardContext>(*this); }
+	auto clone() { return std::make_unique<PublicObjectiveCardContext>(*this); }
 
-    const int get_satisfaction_value() const { return satisfactionValue; }
+	const int get_satisfaction_value() const { return satisfactionValue; }
 
   private:
-    int satisfactionValue;
+	int satisfactionValue;
 };
 
 using concrete_puoc_context_t = std::unique_ptr<PublicObjectiveCardContext>;

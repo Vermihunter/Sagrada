@@ -4,9 +4,8 @@
 #include "Attributes.h"
 
 struct DieValueTestConfig {
-    value_t originalValue;
-    value_t expectedValue;
+	value_t originalValue;
+	value_t expectedValue;
 };
-
 
 #endif // DIE_VALUE_TEST_CONFIG_H

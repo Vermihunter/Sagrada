@@ -1,10 +1,6 @@
 #ifndef GAME_CONTEXT_H
 #define GAME_CONTEXT_H
 
-#include <array>
-#include <memory>
-#include <unordered_map>
-
 #include "BasicMoveHandler.h"
 #include "DiceSupply.h"
 #include "GameState.h"
@@ -18,6 +14,10 @@
 #include "ToolCard.h"
 #include "Typedefs.h"
 
+#include <array>
+#include <memory>
+#include <unordered_map>
+
 class GameContextBuilder;
 
 /**
@@ -30,35 +30,31 @@ class GameContextBuilder;
  * and don't have to check GameContext objects for correctness before or after
  * passing to the Game.
  */
-struct GameContext
-{
-    /**
-     * @brief Public copy constructor with concrete random configuration
-     */
-    GameContext(const GameContext& other, rnd_t rnd);
+struct GameContext {
+	/**
+	 * @brief Public copy constructor with concrete random configuration
+	 */
+	GameContext(const GameContext& other, rnd_t rnd);
 
-    auto clone(rnd_t rnd)
-    {
-        return std::make_unique<GameContext>(*this, std::move(rnd));
-    }
+	auto clone(rnd_t rnd) { return std::make_unique<GameContext>(*this, std::move(rnd)); }
 
-    wpc_c selectableWPC;
-    puoc_c publicObjectiveCards;
-    tc_c toolCards;
-    player_c players;
-    size_t numberOfRounds;
-    size_t dicePerRound;
-    size_t playerWpcChoiceCount;
-    rnd_t rnd;
-    supply_t supply;
-    RoundTrack roundTrack;
-    score_ctx_t scoreCtx;
+	wpc_c       selectableWPC;
+	puoc_c      publicObjectiveCards;
+	tc_c        toolCards;
+	player_c    players;
+	size_t      numberOfRounds;
+	size_t      dicePerRound;
+	size_t      playerWpcChoiceCount;
+	rnd_t       rnd;
+	supply_t    supply;
+	RoundTrack  roundTrack;
+	score_ctx_t scoreCtx;
 
-    std::unique_ptr<BasicMoveHandler> basicMoveHandler;
+	std::unique_ptr<BasicMoveHandler> basicMoveHandler;
 
   private:
-    friend GameContextBuilder;
-    GameContext() {}
+	friend GameContextBuilder;
+	GameContext() {}
 };
 
 using game_context_t = std::unique_ptr<GameContext>;

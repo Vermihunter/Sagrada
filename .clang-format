@@ -1,0 +1,47 @@
+# .clang-format
+---
+BasedOnStyle:        LLVM
+
+# Indentation & Tabs
+IndentWidth:         4        # logical indent width (still affects formatting)
+TabWidth:            4        # visual width of a tab character
+UseTab:              ForIndentation  # use tabs for leading indent, spaces elsewhere
+
+# Line length
+ColumnLimit:         100
+
+# Brace wrapping: Stroustrup keeps else/while on their own line
+BreakBeforeBraces:   Stroustrup
+
+# Allow very short constructs on one line
+AllowShortIfStatementsOnASingleLine:    true
+AllowShortLoopsOnASingleLine:           true
+AllowShortFunctionsOnASingleLine:       Inline
+
+# Pointer/reference alignment
+DerivePointerAlignment: false
+PointerAlignment:        Left
+
+# Spaces
+SpaceBeforeParens:       ControlStatements
+SpacesInParentheses:     false
+SpacesInAngles:          false
+
+# Includes
+SortIncludes:            true
+IncludeBlocks:           Regroup
+
+# Alignments
+AlignConsecutiveAssignments:    true
+AlignConsecutiveDeclarations:   true
+AlignTrailingComments:          true
+
+# Comments
+ReflowComments:         true
+
+# C++11 braced list style
+Cpp11BracedListStyle:   true
+
+# Keep macros tight
+MacroBlockBegin:        ''
+MacroBlockEnd:          ''

@@ -1,9 +1,9 @@
 #ifndef ATTRIBUTES_JSON_H
 #define ATTRIBUTES_JSON_H
 
-#include <nlohmann/json.hpp>
-
 #include "Attributes.h"
+
+#include <nlohmann/json.hpp>
 
 #define JSON_HAS_CPP_17 1
 using json = nlohmann::json_abi_v3_11_2::json;

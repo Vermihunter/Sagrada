@@ -6,7 +6,7 @@
 
 void to_json(json& j, const PlayerCountRelatedGameInformation& info)
 {
-    j = json {{"PlayerCount", info.playerCount}, {"DiceCount", info.diceCount}};
+	j = json{{"PlayerCount", info.playerCount}, {"DiceCount", info.diceCount}};
 }
 
 #endif // PLAYER_COUNT_RELATED_JSON_H

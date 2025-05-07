@@ -8,17 +8,16 @@
 #include "Tournament.h"
 #include "TournamentPage.h"
 
-class TournamentConfigPage : public SimulationConfigPageBase
-{
+class TournamentConfigPage : public SimulationConfigPageBase {
   public:
-    TournamentConfigPage(const ViewContext& _ctx);
+	TournamentConfigPage(const ViewContext& _ctx);
 
   private:
-    LabeledWidget<NumberEntry> lne_GameCount;
+	LabeledWidget<NumberEntry> lne_GameCount;
 
-    std::unique_ptr<TournamentPage> tournamentPage;
+	std::unique_ptr<TournamentPage> tournamentPage;
 
-    virtual void start_button_clicked() override;
+	virtual void start_button_clicked() override;
 };
 
 #endif // TOURNAMENT_CONFIG_PAGE_H

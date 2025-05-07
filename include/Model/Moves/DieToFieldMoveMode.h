@@ -15,16 +15,15 @@ using dtfm_mode_mask_t = std::uint16_t;
  *
  * The functionality of combining multiple modes is currently unused.
  */
-enum dtfm_mode_t : dtfm_mode_mask_t
-{
-    DTFM_MODE_DEFAULT = 0,
-    DTFM_MODE_IGNORE_VALUE = 1,
-    DTFM_MODE_IGNORE_COLOR = 2,
-    DTFM_MODE_ACCEPT_UNREACHABLE = 4
+enum dtfm_mode_t : dtfm_mode_mask_t {
+	DTFM_MODE_DEFAULT            = 0,
+	DTFM_MODE_IGNORE_VALUE       = 1,
+	DTFM_MODE_IGNORE_COLOR       = 2,
+	DTFM_MODE_ACCEPT_UNREACHABLE = 4
 };
 
 /* Debugging mode-to-string mapper */
-const std::unordered_map<dtfm_mode_t, std::string> dtfmModeToStr {
+const std::unordered_map<dtfm_mode_t, std::string> dtfmModeToStr{
     {DTFM_MODE_DEFAULT, "default"},
     {DTFM_MODE_IGNORE_VALUE, "ignore color"},
     {DTFM_MODE_IGNORE_COLOR, "ignore value"},
@@ -33,14 +32,14 @@ const std::unordered_map<dtfm_mode_t, std::string> dtfmModeToStr {
 /* Debugging functions */
 inline std::ostream& print_mode(std::ostream& os, dtfm_mode_mask_t modeMask)
 {
-    os << "mode: [";
-    for (auto&& [mode, modeStr] : dtfmModeToStr) {
-        if ((modeMask & mode) > 0) {
-            os << modeStr << ",";
-        }
-    }
+	os << "mode: [";
+	for (auto&& [mode, modeStr] : dtfmModeToStr) {
+		if ((modeMask & mode) > 0) {
+			os << modeStr << ",";
+		}
+	}
 
-    return os << "]";
+	return os << "]";
 }
 
 #endif // DIE_TO_FIELD_MOVE_MODE_H

@@ -13,9 +13,8 @@ struct TournamentConfig;
  * same amount of points as there are players in the tournament and the last
  * player gets 1 point.
  */
-struct DefaultPointMapper
-{
-    static void initialize_for_config(TournamentConfig& tournamentConfig);
+struct DefaultPointMapper {
+	static void initialize_for_config(TournamentConfig& tournamentConfig);
 };
 
 #endif // DEFAULT_TOURNAMENT_POINTS_MAPPER_H

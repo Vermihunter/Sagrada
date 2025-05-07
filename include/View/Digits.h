@@ -1,52 +1,48 @@
 #ifndef DIGITS_H
 #define DIGITS_H
 
-#include <gtkmm/drawingarea.h>
-
 #include "Logger.h"
 #include "Point.h"
 
-class DrawingCommand
-{
-  public:
-    virtual ~DrawingCommand() = default;
+#include <gtkmm/drawingarea.h>
 
-    // Made empty implementation because cannot store
-    // abstract class instances into the vector otherwise
-    virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr,
-                         const Point& topLeft) const
-    {
-        throw std::invalid_argument {"This should be a base class"};
-    }
+class DrawingCommand {
+  public:
+	virtual ~DrawingCommand() = default;
+
+	// Made empty implementation because cannot store
+	// abstract class instances into the vector otherwise
+	virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr, const Point& topLeft) const
+	{
+		throw std::invalid_argument{"This should be a base class"};
+	}
 
   protected:
-    DrawingCommand(const Point& _relativePos) : relativePos(_relativePos) {}
+	DrawingCommand(const Point& _relativePos) : relativePos(_relativePos) {}
 
-    const Point relativePos;
+	const Point relativePos;
 };
 
-class MoveToCommand : public DrawingCommand
-{
+class MoveToCommand : public DrawingCommand {
   public:
-    MoveToCommand(const Point& relativePos) : DrawingCommand(relativePos) {}
+	MoveToCommand(const Point& relativePos) : DrawingCommand(relativePos) {}
 
-    virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr,
-                         const Point& topLeft) const override
-    {
-        cr->move_to(relativePos.x + topLeft.x, relativePos.y + topLeft.y);
-    }
+	virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr,
+	                     const Point&                         topLeft) const override
+	{
+		cr->move_to(relativePos.x + topLeft.x, relativePos.y + topLeft.y);
+	}
 };
 
-class LineToCommand : public DrawingCommand
-{
+class LineToCommand : public DrawingCommand {
   public:
-    LineToCommand(const Point& relativePos) : DrawingCommand(relativePos) {}
+	LineToCommand(const Point& relativePos) : DrawingCommand(relativePos) {}
 
-    virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr,
-                         const Point& topLeft) const override
-    {
-        cr->line_to(relativePos.x + topLeft.x, relativePos.y + topLeft.y);
-    }
+	virtual void execute(const Cairo::RefPtr<Cairo::Context>& cr,
+	                     const Point&                         topLeft) const override
+	{
+		cr->line_to(relativePos.x + topLeft.x, relativePos.y + topLeft.y);
+	}
 };
 
 constexpr size_t blockSize = 10;
@@ -54,24 +50,20 @@ constexpr size_t blockSize = 10;
 using drawing_command_t = std::unique_ptr<DrawingCommand>;
 using drawing_command_c = std::vector<drawing_command_t>;
 
-class DigitInfo
-{
+class DigitInfo {
   public:
-    static DigitInfo& get()
-    {
-        static DigitInfo instance;
-        return instance;
-    }
+	static DigitInfo& get()
+	{
+		static DigitInfo instance;
+		return instance;
+	}
 
-    const drawing_command_c& operator[](size_t i)
-    {
-        return digitDrawingCommands[i];
-    }
+	const drawing_command_c& operator[](size_t i) { return digitDrawingCommands[i]; }
 
   private:
-    std::vector<drawing_command_c> digitDrawingCommands;
+	std::vector<drawing_command_c> digitDrawingCommands;
 
-    DigitInfo();
+	DigitInfo();
 };
 
 /**
@@ -87,22 +79,22 @@ class DigitInfo
  * @param topleftX top left x coordinate of the number
  * @param topleftY top left y coordinate of the number
  */
-inline void draw_digit(const Cairo::RefPtr<Cairo::Context>& cr,
-                       unsigned int digit, const Point& topLeft)
+inline void draw_digit(const Cairo::RefPtr<Cairo::Context>& cr, unsigned int digit,
+                       const Point& topLeft)
 {
-    if (digit >= 10) {
-        LOG_E("Undefined digit drawing request: " + std::to_string(digit));
-        return;
-    }
+	if (digit >= 10) {
+		LOG_E("Undefined digit drawing request: " + std::to_string(digit));
+		return;
+	}
 
-    cr->set_line_width(2);
-    cr->set_source_rgba(0, 0, 0, 1);
+	cr->set_line_width(2);
+	cr->set_source_rgba(0, 0, 0, 1);
 
-    for (auto&& drawingCommand : DigitInfo::get()[digit]) {
-        drawingCommand->execute(cr, topLeft);
-    }
+	for (auto&& drawingCommand : DigitInfo::get()[digit]) {
+		drawingCommand->execute(cr, topLeft);
+	}
 
-    cr->stroke();
+	cr->stroke();
 }
 
 #endif // DIGITS_H

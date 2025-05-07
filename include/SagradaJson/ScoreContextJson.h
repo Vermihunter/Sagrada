@@ -6,10 +6,9 @@
 
 void to_json(json& j, const score_ctx_t& scoreCtx)
 {
-    j = json {
-        {"pointsPerUnusedFavorToken", scoreCtx->pointsPerUnusedFavorToken},
-        {"minusPointsPerEmptyField", scoreCtx->minusPointsPerEmptyField},
-        {"pointsPerProcValue", scoreCtx->pointsPerProcValue}};
+	j = json{{"pointsPerUnusedFavorToken", scoreCtx->pointsPerUnusedFavorToken},
+	         {"minusPointsPerEmptyField", scoreCtx->minusPointsPerEmptyField},
+	         {"pointsPerProcValue", scoreCtx->pointsPerProcValue}};
 }
 
 #endif // SCORE_CONTEXT_JSON_H

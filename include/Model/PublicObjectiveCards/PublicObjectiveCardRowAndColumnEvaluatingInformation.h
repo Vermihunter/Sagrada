@@ -10,16 +10,11 @@
  *
  * @tparam Attribute
  */
-template <typename Attribute>
-struct PublicObjectiveCardRowAndColumnEvaluatingInformation
-{
-    PublicObjectiveCardRowAndColumnEvaluatingInformation(size_t _size)
-        : attrIndices(_size, 0)
-    {
-    }
+template <typename Attribute> struct PublicObjectiveCardRowAndColumnEvaluatingInformation {
+	PublicObjectiveCardRowAndColumnEvaluatingInformation(size_t _size) : attrIndices(_size, 0) {}
 
-    std::vector<size_t> attrIndices;
-    std::unordered_set<Attribute> emptyFieldRestrictions;
+	std::vector<size_t>           attrIndices;
+	std::unordered_set<Attribute> emptyFieldRestrictions;
 };
 
 #endif // PUBLIC_OBJECTIVE_CARD_ROW_AND_COLUMN_EVALUATING_INFORMATION_H

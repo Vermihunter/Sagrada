@@ -9,14 +9,13 @@
 
 void to_json(json& j, const GameState& gameState)
 {
-    j = json {
-        {"HasEnded", gameState.hasEnded},
-        {"RoundNumber", gameState.roundNumber},
-        {"PlayerStartedThisRoundIndex", gameState.playerStartedThisRoundIndex},
-        {"CurrPlayerIndex", gameState.currPlayerIndex},
-        {"CurrentRoundRemainingDice", gameState.currentRoundRemainingDice},
-        {"CurrRoundInfo", gameState.currRoundInfo},
-        {"PreviousToolCardMove", move_t(gameState.previousToolCardMove)}};
+	j = json{{"HasEnded", gameState.hasEnded},
+	         {"RoundNumber", gameState.roundNumber},
+	         {"PlayerStartedThisRoundIndex", gameState.playerStartedThisRoundIndex},
+	         {"CurrPlayerIndex", gameState.currPlayerIndex},
+	         {"CurrentRoundRemainingDice", gameState.currentRoundRemainingDice},
+	         {"CurrRoundInfo", gameState.currRoundInfo},
+	         {"PreviousToolCardMove", move_t(gameState.previousToolCardMove)}};
 }
 
 #endif // GAME_STATE_JSON_H
